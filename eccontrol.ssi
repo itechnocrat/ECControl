@@ -1,0 +1,216 @@
+<!DOCTYPE HTML PUBLIC "-//w3c//DTD HTML 4.0 Frameset//EN">
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>ECControl</title>
+  <style>
+  <style>table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td,
+  th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+  .row {
+    background-color: #dddddd;
+  }
+  </style>
+</head>
+
+<body>
+  <script language="JavaScript">
+  var int = self.setInterval("varupdate()", 250);
+
+  function varupdate() {
+    if (window.XMLHttpRequest) { //code for IE7+, FF,Chr, Opera, Safari
+      xmlhttp = new XMLHttpRequest();
+    } else {
+      xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    xmlhttp.open("GET", "eccontrol.xml", false);
+    xmlhttp.send();
+    xmlDoc = xmlhttp.responseXML;
+    document.getElementById("date_time").innerHTML = xmlDoc.getElementsByTagName("date_time")[0].childNodes[0].nodeValue;
+    // 
+    document.getElementById("MW101").value = xmlDoc.getElementsByTagName("MW101")[0].childNodes[0].nodeValue;
+    document.getElementById("MW201").innerHTML = xmlDoc.getElementsByTagName("MW201")[0].childNodes[0].nodeValue;
+    document.getElementById("MW301").innerHTML = xmlDoc.getElementsByTagName("MW301")[0].childNodes[0].nodeValue;
+    document.getElementById("MW401").innerHTML = xmlDoc.getElementsByTagName("MW401")[0].childNodes[0].nodeValue;
+    //
+    document.getElementById("MW102").value = xmlDoc.getElementsByTagName("MW102")[0].childNodes[0].nodeValue;
+    document.getElementById("MW202").innerHTML = xmlDoc.getElementsByTagName("MW202")[0].childNodes[0].nodeValue;
+    document.getElementById("MW302").innerHTML = xmlDoc.getElementsByTagName("MW302")[0].childNodes[0].nodeValue;
+    document.getElementById("MW402").innerHTML = xmlDoc.getElementsByTagName("MW402")[0].childNodes[0].nodeValue;
+    // 
+    document.getElementById("MW103").value = xmlDoc.getElementsByTagName("MW103")[0].childNodes[0].nodeValue;
+    document.getElementById("MW203").innerHTML = xmlDoc.getElementsByTagName("MW203")[0].childNodes[0].nodeValue;
+    document.getElementById("MW303").innerHTML = xmlDoc.getElementsByTagName("MW303")[0].childNodes[0].nodeValue;
+    document.getElementById("MW403").innerHTML = xmlDoc.getElementsByTagName("MW403")[0].childNodes[0].nodeValue;
+    // 
+    document.getElementById("MW104").value = xmlDoc.getElementsByTagName("MW104")[0].childNodes[0].nodeValue;
+    document.getElementById("MW204").innerHTML = xmlDoc.getElementsByTagName("MW204")[0].childNodes[0].nodeValue;
+    document.getElementById("MW304").innerHTML = xmlDoc.getElementsByTagName("MW304")[0].childNodes[0].nodeValue;
+    document.getElementById("MW404").innerHTML = xmlDoc.getElementsByTagName("MW404")[0].childNodes[0].nodeValue;
+  }
+  </script>
+  <h2>EC Control</h2>
+  <table>
+    <tr>
+      <th colspan="5"><span id="date_time"></span></th>
+    </tr>
+    <!--  -->
+    <tr class="row">
+      <td colspan="5">Gruppe1</td>
+    </tr>
+    <tr>
+      <td>Sollwert</td>
+      <td>Temp</td>
+      <td>Istwert</td>
+      <td>Error</td>
+      <td></td>
+    </tr>
+    <tr>
+      <form id="Gruppe1" action="/WRITEPI" method="POST">
+        <td>
+          <span>
+          <input type="hidden" name="ADR1" value="MW101">
+          <input type="text" name="VALUE1" value="" id="MW101">
+          <input type="hidden" name="FORMAT1" value="%d">
+        </span>
+        </td>
+        <td>
+          <span id="MW201"></span>
+        </td>
+        <td>
+          <span id="MW301"></span>
+        </td>
+        <td>
+          <span id="MW401"></span>
+        </td>
+        <td>
+          <span>
+            <input type="SUBMIT" value="Submit" name="VALUE">
+          </span>
+        </td>
+      </form>
+    </tr>
+    <!--  -->
+    <tr class="row">
+      <td colspan="5">Gruppe2</td>
+    </tr>
+    <tr>
+      <td>Sollwert</td>
+      <td>Temp</td>
+      <td>Istwert</td>
+      <td>Error</td>
+      <td></td>
+    </tr>
+    <tr>
+      <form id="Gruppe2" action="/WRITEPI" method="POST">
+        <td>
+          <span>
+          <input type="hidden" name="ADR2" value="MW102">
+          <input type="text" name="VALUE2" value="" id="MW102">
+          <input type="hidden" name="FORMAT2" value="%d">
+        </span>
+        </td>
+        <td>
+          <span id="MW202"></span>
+        </td>
+        <td>
+          <span id="MW302"></span>
+        </td>
+        <td>
+          <span id="MW402"></span>
+        </td>
+        <td>
+          <span>
+            <input type="SUBMIT" value="Submit" name="VALUE">
+          </span>
+        </td>
+      </form>
+    </tr>
+    <!--  -->
+    <tr class="row">
+      <td colspan="5">Gruppe3</td>
+    </tr>
+    <tr>
+      <td>Sollwert</td>
+      <td>Temp</td>
+      <td>Istwert</td>
+      <td>Error</td>
+      <td></td>
+    </tr>
+    <tr>
+      <form id="Gruppe3" action="/WRITEPI" method="POST">
+        <td>
+          <span>
+          <input type="hidden" name="ADR3" value="MW103">
+          <input type="text" name="VALUE3" value="" id="MW103">
+          <input type="hidden" name="FORMAT2" value="%d">
+        </span>
+        </td>
+        <td>
+          <span id="MW203"></span>
+        </td>
+        <td>
+          <span id="MW303"></span>
+        </td>
+        <td>
+          <span id="MW403"></span>
+        </td>
+        <td>
+          <span>
+            <input type="SUBMIT" value="Submit" name="VALUE">
+          </span>
+        </td>
+      </form>
+    </tr>
+    <!--  -->
+    <tr class="row">
+      <td colspan="5">Gruppe4</td>
+    </tr>
+    <tr>
+      <td>Sollwert</td>
+      <td>Temp</td>
+      <td>Istwert</td>
+      <td>Error</td>
+      <td></td>
+    </tr>
+    <tr>
+      <form id="Gruppe4" action="/WRITEPI" method="POST">
+        <td>
+          <span>
+          <input type="hidden" name="ADR4" value="MW103">
+          <input type="text" name="VALUE4" value="" id="MW104">
+          <input type="hidden" name="FORMAT2" value="%d">
+        </span>
+        </td>
+        <td>
+          <span id="MW204"></span>
+        </td>
+        <td>
+          <span id="MW304"></span>
+        </td>
+        <td>
+          <span id="MW404"></span>
+        </td>
+        <td>
+          <span>
+            <input type="SUBMIT" value="Submit" name="VALUE">
+          </span>
+        </td>
+      </form>
+    </tr>
+    <!--  -->
+  </table>
+</body>
+
+</html>

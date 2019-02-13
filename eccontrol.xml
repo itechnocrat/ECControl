@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<note>
+    <date_time><!--#GETTIMEDATE FORMAT=%d.%m.%y %H:%M:%S--></date_time>
+    <MW101><!--#READPI ADR=MW101&FORMAT=%d--></MW101>
+    <MW201><!--#READPI ADR=MW201&FORMAT=%d--></MW201>
+    <MW301><!--#READPI ADR=MW301&FORMAT=%d--></MW301>
+    <MW401><!--#READPI ADR=MW401&FORMAT=%d--></MW401>
+
+    <MW102><!--#READPI ADR=MW102&FORMAT=%d--></MW102>
+    <MW202><!--#READPI ADR=MW202&FORMAT=%d--></MW202>
+    <MW302><!--#READPI ADR=MW302&FORMAT=%d--></MW302>
+    <MW402><!--#READPI ADR=MW402&FORMAT=%d--></MW402>
+
+    <MW103><!--#READPI ADR=MW103&FORMAT=%d--></MW103>
+    <MW203><!--#READPI ADR=MW203&FORMAT=%d--></MW203>
+    <MW303><!--#READPI ADR=MW303&FORMAT=%d--></MW303>
+    <MW403><!--#READPI ADR=MW403&FORMAT=%d--></MW403>
+
+    <MW104><!--#READPI ADR=MW104&FORMAT=%d--></MW104>
+    <MW204><!--#READPI ADR=MW204&FORMAT=%d--></MW204>
+    <MW304><!--#READPI ADR=MW304&FORMAT=%d--></MW304>
+    <MW404><!--#READPI ADR=MW404&FORMAT=%d--></MW404>
+</note>
