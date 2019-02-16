@@ -181,9 +181,9 @@
           <td></td>
           <td colspan="2">
             <form action="/WRITEPI" method="POST">
-              <input type="hidden" name="ADR2" value="MW102">
-              <input type="text" size="5" maxlength="10" name="VALUE2" value="">
-              <input type="hidden" name="FORMAT2" value="%d">
+              <input type="hidden" name="ADR1" value="MW102">
+              <input type="text" size="5" maxlength="10" name="VALUE1" value="">
+              <input type="hidden" name="FORMAT1" value="%d">
               <input type="SUBMIT" value="Submit" name="VALUE">
             </form>
           </td>
@@ -197,9 +197,9 @@
           <td></td>
           <td colspan="2">
             <form action="/WRITEPI" method="POST">
-              <input type="hidden" name="ADR3" value="MW103">
-              <input type="text" size="5" maxlength="10" name="VALUE3" value="">
-              <input type="hidden" name="FORMAT3" value="%d">
+              <input type="hidden" name="ADR1" value="MW103">
+              <input type="text" size="5" maxlength="10" name="VALUE1" value="">
+              <input type="hidden" name="FORMAT1" value="%d">
               <input type="SUBMIT" value="Submit" name="VALUE">
             </form>
           </td>
@@ -213,9 +213,9 @@
           <td></td>
           <td colspan="2">
             <form action="/WRITEPI" method="POST">
-              <input type="hidden" name="ADR4" value="MW104">
-              <input type="text" size="5" maxlength="10" name="VALUE4" value="">
-              <input type="hidden" name="FORMAT4" value="%d">
+              <input type="hidden" name="ADR1" value="MW104">
+              <input type="text" size="5" maxlength="10" name="VALUE1" value="">
+              <input type="hidden" name="FORMAT1" value="%d">
               <input type="SUBMIT" value="Submit" name="VALUE">
             </form>
           </td>
@@ -229,9 +229,9 @@
           <td></td>
           <td colspan="2">
             <form action="/WRITEPI" method="POST">
-              <input type="hidden" name="ADR5" value="MW105">
-              <input type="text" size="5" maxlength="10" name="VALUE5" value="">
-              <input type="hidden" name="FORMAT5" value="%d">
+              <input type="hidden" name="ADR1" value="MW105">
+              <input type="text" size="5" maxlength="10" name="VALUE1" value="">
+              <input type="hidden" name="FORMAT1" value="%d">
               <input type="SUBMIT" value="Submit" name="VALUE">
             </form>
           </td>
@@ -245,9 +245,9 @@
           <td></td>
           <td colspan="2">
             <form action="/WRITEPI" method="POST">
-              <input type="hidden" name="ADR6" value="MW106">
-              <input type="text" size="5" maxlength="10" name="VALUE6" value="">
-              <input type="hidden" name="FORMAT6" value="%d">
+              <input type="hidden" name="ADR1" value="MW106">
+              <input type="text" size="5" maxlength="10" name="VALUE1" value="">
+              <input type="hidden" name="FORMAT1" value="%d">
               <input type="SUBMIT" value="Submit" name="VALUE">
             </form>
           </td>
@@ -261,9 +261,9 @@
           <td></td>
           <td colspan="2">
             <form action="/WRITEPI" method="POST">
-              <input type="hidden" name="ADR7" value="MW107">
-              <input type="text" size="5" maxlength="10" name="VALUE7" value="">
-              <input type="hidden" name="FORMAT7" value="%d">
+              <input type="hidden" name="ADR1" value="MW107">
+              <input type="text" size="5" maxlength="10" name="VALUE1" value="">
+              <input type="hidden" name="FORMAT1" value="%d">
               <input type="SUBMIT" value="Submit" name="VALUE">
             </form>
           </td>
@@ -277,9 +277,9 @@
           <td></td>
           <td colspan="2">
             <form action="/WRITEPI" method="POST">
-              <input type="hidden" name="ADR8" value="MW108">
-              <input type="text" size="5" maxlength="10" name="VALUE8" value="">
-              <input type="hidden" name="FORMAT8" value="%d">
+              <input type="hidden" name="ADR1" value="MW108">
+              <input type="text" size="5" maxlength="10" name="VALUE1" value="">
+              <input type="hidden" name="FORMAT1" value="%d">
               <input type="SUBMIT" value="Submit" name="VALUE">
             </form>
           </td>
@@ -293,9 +293,9 @@
           <td></td>
           <td colspan="2">
             <form action="/WRITEPI" method="POST">
-              <input type="hidden" name="ADR9" value="MW109">
-              <input type="text" size="5" maxlength="10" name="VALUE9" value="">
-              <input type="hidden" name="FORMAT9" value="%d">
+              <input type="hidden" name="ADR1" value="MW109">
+              <input type="text" size="5" maxlength="10" name="VALUE1" value="">
+              <input type="hidden" name="FORMAT1" value="%d">
               <input type="SUBMIT" value="Submit" name="VALUE">
             </form>
           </td>
@@ -309,9 +309,9 @@
           <td></td>
           <td colspan="2">
             <form action="/WRITEPI" method="POST">
-              <input type="hidden" name="ADR10" value="MW110">
-              <input type="text" size="5" maxlength="10" name="VALUE10" value="">
-              <input type="hidden" name="FORMAT10" value="%d">
+              <input type="hidden" name="ADR1" value="MW110">
+              <input type="text" size="5" maxlength="10" name="VALUE1" value="">
+              <input type="hidden" name="FORMAT1" value="%d">
               <input type="SUBMIT" value="Submit" name="VALUE">
             </form>
           </td>
@@ -325,9 +325,9 @@
           <td></td>
           <td colspan="2">
             <form action="/WRITEPI" method="POST">
-              <input type="hidden" name="ADR11" value="MW111">
-              <input type="text" size="5" maxlength="10" name="VALUE11" value="">
-              <input type="hidden" name="FORMAT11" value="%d">
+              <input type="hidden" name="ADR1" value="MW111">
+              <input type="text" size="5" maxlength="10" name="VALUE1" value="">
+              <input type="hidden" name="FORMAT1" value="%d">
               <input type="SUBMIT" value="Submit" name="VALUE">
             </form>
           </td>
@@ -341,9 +341,9 @@
           <td></td>
           <td colspan="2">
             <form action="/WRITEPI" method="POST">
-              <input type="hidden" name="ADR12" value="MW112">
-              <input type="text" size="5" maxlength="10" name="VALUE12" value="">
-              <input type="hidden" name="FORMAT12" value="%d">
+              <input type="hidden" name="ADR1" value="MW112">
+              <input type="text" size="5" maxlength="10" name="VALUE1" value="">
+              <input type="hidden" name="FORMAT1" value="%d">
               <input type="SUBMIT" value="Submit" name="VALUE">
             </form>
           </td>
@@ -357,9 +357,9 @@
           <td></td>
           <td colspan="2">
             <form action="/WRITEPI" method="POST">
-              <input type="hidden" name="ADR13" value="MW113">
-              <input type="text" size="5" maxlength="10" name="VALUE13" value="">
-              <input type="hidden" name="FORMAT13" value="%d">
+              <input type="hidden" name="ADR1" value="MW113">
+              <input type="text" size="5" maxlength="10" name="VALUE1" value="">
+              <input type="hidden" name="FORMAT1" value="%d">
               <input type="SUBMIT" value="Submit" name="VALUE">
             </form>
           </td>
@@ -373,9 +373,9 @@
           <td></td>
           <td colspan="2">
             <form action="/WRITEPI" method="POST">
-              <input type="hidden" name="ADR14" value="MW114">
-              <input type="text" size="5" maxlength="10" name="VALUE14" value="">
-              <input type="hidden" name="FORMAT14" value="%d">
+              <input type="hidden" name="ADR1" value="MW114">
+              <input type="text" size="5" maxlength="10" name="VALUE1" value="">
+              <input type="hidden" name="FORMAT1" value="%d">
               <input type="SUBMIT" value="Submit" name="VALUE">
             </form>
           </td>
@@ -389,9 +389,9 @@
           <td></td>
           <td colspan="2">
             <form action="/WRITEPI" method="POST">
-              <input type="hidden" name="ADR15" value="MW115">
-              <input type="text" size="5" maxlength="10" name="VALUE15" value="">
-              <input type="hidden" name="FORMAT15" value="%d">
+              <input type="hidden" name="ADR1" value="MW115">
+              <input type="text" size="5" maxlength="10" name="VALUE1" value="">
+              <input type="hidden" name="FORMAT1" value="%d">
               <input type="SUBMIT" value="Submit" name="VALUE">
             </form>
           </td>
@@ -405,9 +405,9 @@
           <td></td>
           <td colspan="2">
             <form action="/WRITEPI" method="POST">
-              <input type="hidden" name="ADR16" value="MW116">
-              <input type="text" size="5" maxlength="10" name="VALUE16" value="">
-              <input type="hidden" name="FORMAT16" value="%d">
+              <input type="hidden" name="ADR1" value="MW116">
+              <input type="text" size="5" maxlength="10" name="VALUE1" value="">
+              <input type="hidden" name="FORMAT1" value="%d">
               <input type="SUBMIT" value="Submit" name="VALUE">
             </form>
           </td>
@@ -421,9 +421,9 @@
           <td></td>
           <td colspan="2">
             <form action="/WRITEPI" method="POST">
-              <input type="hidden" name="ADR17" value="MW117">
-              <input type="text" size="5" maxlength="10" name="VALUE17" value="">
-              <input type="hidden" name="FORMAT17" value="%d">
+              <input type="hidden" name="ADR1" value="MW117">
+              <input type="text" size="5" maxlength="10" name="VALUE1" value="">
+              <input type="hidden" name="FORMAT1" value="%d">
               <input type="SUBMIT" value="Submit" name="VALUE">
             </form>
           </td>
@@ -437,9 +437,9 @@
           <td></td>
           <td colspan="2">
             <form action="/WRITEPI" method="POST">
-              <input type="hidden" name="ADR18" value="MW118">
-              <input type="text" size="5" maxlength="10" name="VALUE18" value="">
-              <input type="hidden" name="FORMAT18" value="%d">
+              <input type="hidden" name="ADR1" value="MW118">
+              <input type="text" size="5" maxlength="10" name="VALUE1" value="">
+              <input type="hidden" name="FORMAT1" value="%d">
               <input type="SUBMIT" value="Submit" name="VALUE">
             </form>
           </td>
@@ -453,9 +453,9 @@
           <td></td>
           <td colspan="2">
             <form action="/WRITEPI" method="POST">
-              <input type="hidden" name="ADR19" value="MW119">
-              <input type="text" size="5" maxlength="10" name="VALUE19" value="">
-              <input type="hidden" name="FORMAT19" value="%d">
+              <input type="hidden" name="ADR1" value="MW119">
+              <input type="text" size="5" maxlength="10" name="VALUE1" value="">
+              <input type="hidden" name="FORMAT1" value="%d">
               <input type="SUBMIT" value="Submit" name="VALUE">
             </form>
           </td>
@@ -469,9 +469,9 @@
           <td></td>
           <td colspan="2">
             <form action="/WRITEPI" method="POST">
-              <input type="hidden" name="ADR20" value="MW120">
-              <input type="text" size="5" maxlength="10" name="VALUE20" value="">
-              <input type="hidden" name="FORMAT20" value="%d">
+              <input type="hidden" name="ADR1" value="MW120">
+              <input type="text" size="5" maxlength="10" name="VALUE1" value="">
+              <input type="hidden" name="FORMAT1" value="%d">
               <input type="SUBMIT" value="Submit" name="VALUE">
             </form>
           </td>
