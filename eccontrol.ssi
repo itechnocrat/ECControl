@@ -38,7 +38,7 @@
           <form action="/WRITEPI" class="form-inline mb-0" method="POST">
             <div class="form-row">
               <input type="hidden" name="ADR1" value="MW101">
-              <input type="text" class="form-control form-control-sm ml-1" size="5" maxlength="5" name="VALUE1" value="####">
+              <input type="text" class="form-control form-control-sm ml-1" size="5" maxlength="5" name="VALUE1" value="">
               <input type="hidden" name="FORMAT1" value="%d">
             </div>
             <button class="btn btn-dark ml-2" type="SUBMIT">Set</button>
@@ -55,7 +55,7 @@
           <form action="/WRITEPI" class="form-inline mb-0" method="POST">
             <div class="form-row">
               <input type="hidden" name="ADR1" value="MW102">
-              <input type="text" class="form-control form-control-sm ml-1" size="5" maxlength="5" name="VALUE1" value="####">
+              <input type="text" class="form-control form-control-sm ml-1" size="5" maxlength="5" name="VALUE1" value="">
               <input type="hidden" name="FORMAT1" value="%d">
             </div>
             <button class="btn btn-dark ml-2" type="SUBMIT">Set</button>
@@ -72,7 +72,7 @@
           <form action="/WRITEPI" class="form-inline mb-0" method="POST">
             <div class="form-row">
               <input type="hidden" name="ADR1" value="MW103">
-              <input type="text" class="form-control form-control-sm ml-1" size="5" maxlength="5" name="VALUE1" value="####">
+              <input type="text" class="form-control form-control-sm ml-1" size="5" maxlength="5" name="VALUE1" value="">
               <input type="hidden" name="FORMAT1" value="%d">
             </div>
             <button class="btn btn-dark ml-2" type="SUBMIT">Set</button>
@@ -89,7 +89,7 @@
           <form action="/WRITEPI" class="form-inline mb-0" method="POST">
             <div class="form-row">
               <input type="hidden" name="ADR1" value="MW104">
-              <input type="text" class="form-control form-control-sm ml-1" size="5" maxlength="5" name="VALUE1" value="####">
+              <input type="text" class="form-control form-control-sm ml-1" size="5" maxlength="5" name="VALUE1" value="">
               <input type="hidden" name="FORMAT1" value="%d">
             </div>
             <button class="btn btn-dark ml-2" type="SUBMIT">Set</button>
@@ -106,7 +106,7 @@
           <form action="/WRITEPI" class="form-inline mb-0" method="POST">
             <div class="form-row">
               <input type="hidden" name="ADR1" value="MW105">
-              <input type="text" class="form-control form-control-sm ml-1" size="5" maxlength="5" name="VALUE1" value="####">
+              <input type="text" class="form-control form-control-sm ml-1" size="5" maxlength="5" name="VALUE1" value="">
               <input type="hidden" name="FORMAT1" value="%d">
             </div>
             <button class="btn btn-dark ml-2" type="SUBMIT">Set</button>
@@ -123,7 +123,7 @@
           <form action="/WRITEPI" class="form-inline mb-0" method="POST">
             <div class="form-row">
               <input type="hidden" name="ADR1" value="MW106">
-              <input type="text" class="form-control form-control-sm ml-1" size="5" maxlength="5" name="VALUE1" value="####">
+              <input type="text" class="form-control form-control-sm ml-1" size="5" maxlength="5" name="VALUE1" value="">
               <input type="hidden" name="FORMAT1" value="%d">
             </div>
             <button class="btn btn-dark ml-2" type="SUBMIT">Set</button>
@@ -140,7 +140,7 @@
           <form action="/WRITEPI" class="form-inline mb-0" method="POST">
             <div class="form-row">
               <input type="hidden" name="ADR1" value="MW107">
-              <input type="text" class="form-control form-control-sm ml-1" size="5" maxlength="5" name="VALUE1" value="####">
+              <input type="text" class="form-control form-control-sm ml-1" size="5" maxlength="5" name="VALUE1" value="">
               <input type="hidden" name="FORMAT1" value="%d">
             </div>
             <button class="btn btn-dark ml-2" type="SUBMIT">Set</button>
@@ -157,7 +157,7 @@
           <form action="/WRITEPI" class="form-inline mb-0" method="POST">
             <div class="form-row">
               <input type="hidden" name="ADR1" value="MW108">
-              <input type="text" class="form-control form-control-sm ml-1" size="5" maxlength="5" name="VALUE1" value="####">
+              <input type="text" class="form-control form-control-sm ml-1" size="5" maxlength="5" name="VALUE1" value="">
               <input type="hidden" name="FORMAT1" value="%d">
             </div>
             <button class="btn btn-dark ml-2" type="SUBMIT">Set</button>
@@ -174,7 +174,7 @@
           <form action="/WRITEPI" class="form-inline mb-0" method="POST">
             <div class="form-row">
               <input type="hidden" name="ADR1" value="MW109">
-              <input type="text" class="form-control form-control-sm ml-1" size="5" maxlength="5" name="VALUE1" value="####">
+              <input type="text" class="form-control form-control-sm ml-1" size="5" maxlength="5" name="VALUE1" value="">
               <input type="hidden" name="FORMAT1" value="%d">
             </div>
             <button class="btn btn-dark ml-2" type="SUBMIT">Set</button>
@@ -191,7 +191,7 @@
           <form action="/WRITEPI" class="form-inline mb-0" method="POST">
             <div class="form-row">
               <input type="hidden" name="ADR1" value="MW110">
-              <input type="text" class="form-control form-control-sm ml-1" size="5" maxlength="5" name="VALUE1" value="####">
+              <input type="text" class="form-control form-control-sm ml-1" size="5" maxlength="5" name="VALUE1" value="">
               <input type="hidden" name="FORMAT1" value="%d">
             </div>
             <button class="btn btn-dark ml-2" type="SUBMIT">Set</button>
@@ -208,7 +208,7 @@
           <form action="/WRITEPI" class="form-inline mb-0" method="POST">
             <div class="form-row">
               <input type="hidden" name="ADR1" value="MW111">
-              <input type="text" class="form-control form-control-sm ml-1" size="5" maxlength="5" name="VALUE1" value="####">
+              <input type="text" class="form-control form-control-sm ml-1" size="5" maxlength="5" name="VALUE1" value="">
               <input type="hidden" name="FORMAT1" value="%d">
             </div>
             <button class="btn btn-dark ml-2" type="SUBMIT">Set</button>
@@ -225,7 +225,7 @@
           <form action="/WRITEPI" class="form-inline mb-0" method="POST">
             <div class="form-row">
               <input type="hidden" name="ADR1" value="MW112">
-              <input type="text" class="form-control form-control-sm ml-1" size="5" maxlength="5" name="VALUE1" value="####">
+              <input type="text" class="form-control form-control-sm ml-1" size="5" maxlength="5" name="VALUE1" value="">
               <input type="hidden" name="FORMAT1" value="%d">
             </div>
             <button class="btn btn-dark ml-2" type="SUBMIT">Set</button>
@@ -242,7 +242,7 @@
           <form action="/WRITEPI" class="form-inline mb-0" method="POST">
             <div class="form-row">
               <input type="hidden" name="ADR1" value="MW113">
-              <input type="text" class="form-control form-control-sm ml-1" size="5" maxlength="5" name="VALUE1" value="####">
+              <input type="text" class="form-control form-control-sm ml-1" size="5" maxlength="5" name="VALUE1" value="">
               <input type="hidden" name="FORMAT1" value="%d">
             </div>
             <button class="btn btn-dark ml-2" type="SUBMIT">Set</button>
@@ -259,7 +259,7 @@
           <form action="/WRITEPI" class="form-inline mb-0" method="POST">
             <div class="form-row">
               <input type="hidden" name="ADR1" value="MW114">
-              <input type="text" class="form-control form-control-sm ml-1" size="5" maxlength="5" name="VALUE1" value="####">
+              <input type="text" class="form-control form-control-sm ml-1" size="5" maxlength="5" name="VALUE1" value="">
               <input type="hidden" name="FORMAT1" value="%d">
             </div>
             <button class="btn btn-dark ml-2" type="SUBMIT">Set</button>
@@ -276,7 +276,7 @@
           <form action="/WRITEPI" class="form-inline mb-0" method="POST">
             <div class="form-row">
               <input type="hidden" name="ADR1" value="MW115">
-              <input type="text" class="form-control form-control-sm ml-1" size="5" maxlength="5" name="VALUE1" value="####">
+              <input type="text" class="form-control form-control-sm ml-1" size="5" maxlength="5" name="VALUE1" value="">
               <input type="hidden" name="FORMAT1" value="%d">
             </div>
             <button class="btn btn-dark ml-2" type="SUBMIT">Set</button>
@@ -293,7 +293,7 @@
           <form action="/WRITEPI" class="form-inline mb-0" method="POST">
             <div class="form-row">
               <input type="hidden" name="ADR1" value="MW116">
-              <input type="text" class="form-control form-control-sm ml-1" size="5" maxlength="5" name="VALUE1" value="####">
+              <input type="text" class="form-control form-control-sm ml-1" size="5" maxlength="5" name="VALUE1" value="">
               <input type="hidden" name="FORMAT1" value="%d">
             </div>
             <button class="btn btn-dark ml-2" type="SUBMIT">Set</button>
@@ -310,7 +310,7 @@
           <form action="/WRITEPI" class="form-inline mb-0" method="POST">
             <div class="form-row">
               <input type="hidden" name="ADR1" value="MW117">
-              <input type="text" class="form-control form-control-sm ml-1" size="5" maxlength="5" name="VALUE1" value="####">
+              <input type="text" class="form-control form-control-sm ml-1" size="5" maxlength="5" name="VALUE1" value="">
               <input type="hidden" name="FORMAT1" value="%d">
             </div>
             <button class="btn btn-dark ml-2" type="SUBMIT">Set</button>
@@ -327,7 +327,7 @@
           <form action="/WRITEPI" class="form-inline mb-0" method="POST">
             <div class="form-row">
               <input type="hidden" name="ADR1" value="MW118">
-              <input type="text" class="form-control form-control-sm ml-1" size="5" maxlength="5" name="VALUE1" value="####">
+              <input type="text" class="form-control form-control-sm ml-1" size="5" maxlength="5" name="VALUE1" value="">
               <input type="hidden" name="FORMAT1" value="%d">
             </div>
             <button class="btn btn-dark ml-2" type="SUBMIT">Set</button>
@@ -344,7 +344,7 @@
           <form action="/WRITEPI" class="form-inline mb-0" method="POST">
             <div class="form-row">
               <input type="hidden" name="ADR1" value="MW119">
-              <input type="text" class="form-control form-control-sm ml-1" size="5" maxlength="5" name="VALUE1" value="####">
+              <input type="text" class="form-control form-control-sm ml-1" size="5" maxlength="5" name="VALUE1" value="">
               <input type="hidden" name="FORMAT1" value="%d">
             </div>
             <button class="btn btn-dark ml-2" type="SUBMIT">Set</button>
@@ -361,7 +361,7 @@
           <form action="/WRITEPI" class="form-inline mb-0" method="POST">
             <div class="form-row">
               <input type="hidden" name="ADR1" value="MW120">
-              <input type="text" class="form-control form-control-sm ml-1" size="5" maxlength="5" name="VALUE1" value="####">
+              <input type="text" class="form-control form-control-sm ml-1" size="5" maxlength="5" name="VALUE1" value="">
               <input type="hidden" name="FORMAT1" value="%d">
             </div>
             <button class="btn btn-dark ml-2" type="SUBMIT">Set</button>
