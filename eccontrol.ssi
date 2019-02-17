@@ -1,482 +1,375 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html lang="en">
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title>ECControl</title>
-  <style type="text/css">
-    table {
-      font-family: sans-serif;
-      border-collapse: collapse;
-      width: 80%;
-    }
-
-    td, th {
-      border: 1px solid #dddddd;
-      text-align: left;
-      padding: 8px;
-    }
-
-    tr:nth-child(even) {
-      background-color: #dddddd;
-    }
-  </style>
+  <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <script type="text/javascript" language="JavaScript">
-  var int = self.setInterval("varupdate()", 250);
-
-  function varupdate() {
-    if (window.XMLHttpRequest) { //code for IE7+, FF,Chr, Opera, Safari
-      xmlhttp = new XMLHttpRequest();
-    } else {
-      xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-    }
-    xmlhttp.open("GET", "eccontrol.xml", false);
-    xmlhttp.send();
-    xmlDoc = xmlhttp.responseXML;
-    document.getElementById("date_time").innerHTML = xmlDoc.getElementsByTagName("date_time")[0].childNodes[0].nodeValue;
-    // 
-    document.getElementById("MW101").innerHTML = xmlDoc.getElementsByTagName("MW101")[0].childNodes[0].nodeValue;
-    document.getElementById("MW201").innerHTML = xmlDoc.getElementsByTagName("MW201")[0].childNodes[0].nodeValue / 10;
-    document.getElementById("MW301").innerHTML = xmlDoc.getElementsByTagName("MW301")[0].childNodes[0].nodeValue;
-    document.getElementById("MW401").innerHTML = xmlDoc.getElementsByTagName("MW401")[0].childNodes[0].nodeValue;
-    //
-    document.getElementById("MW102").innerHTML = xmlDoc.getElementsByTagName("MW102")[0].childNodes[0].nodeValue;
-    document.getElementById("MW202").innerHTML = xmlDoc.getElementsByTagName("MW202")[0].childNodes[0].nodeValue / 10;
-    document.getElementById("MW302").innerHTML = xmlDoc.getElementsByTagName("MW302")[0].childNodes[0].nodeValue;
-    document.getElementById("MW402").innerHTML = xmlDoc.getElementsByTagName("MW402")[0].childNodes[0].nodeValue;
-    // 
-    document.getElementById("MW103").innerHTML = xmlDoc.getElementsByTagName("MW103")[0].childNodes[0].nodeValue;
-    document.getElementById("MW203").innerHTML = xmlDoc.getElementsByTagName("MW203")[0].childNodes[0].nodeValue / 10;
-    document.getElementById("MW303").innerHTML = xmlDoc.getElementsByTagName("MW303")[0].childNodes[0].nodeValue;
-    document.getElementById("MW403").innerHTML = xmlDoc.getElementsByTagName("MW403")[0].childNodes[0].nodeValue;
-    // 
-    document.getElementById("MW104").innerHTML = xmlDoc.getElementsByTagName("MW104")[0].childNodes[0].nodeValue;
-    document.getElementById("MW204").innerHTML = xmlDoc.getElementsByTagName("MW204")[0].childNodes[0].nodeValue / 10;
-    document.getElementById("MW304").innerHTML = xmlDoc.getElementsByTagName("MW304")[0].childNodes[0].nodeValue;
-    document.getElementById("MW404").innerHTML = xmlDoc.getElementsByTagName("MW404")[0].childNodes[0].nodeValue;
-    // 
-    document.getElementById("MW105").innerHTML = xmlDoc.getElementsByTagName("MW105")[0].childNodes[0].nodeValue;
-    document.getElementById("MW205").innerHTML = xmlDoc.getElementsByTagName("MW205")[0].childNodes[0].nodeValue / 10;
-    document.getElementById("MW305").innerHTML = xmlDoc.getElementsByTagName("MW305")[0].childNodes[0].nodeValue;
-    document.getElementById("MW405").innerHTML = xmlDoc.getElementsByTagName("MW405")[0].childNodes[0].nodeValue;
-    // 
-    document.getElementById("MW106").innerHTML = xmlDoc.getElementsByTagName("MW106")[0].childNodes[0].nodeValue;
-    document.getElementById("MW206").innerHTML = xmlDoc.getElementsByTagName("MW206")[0].childNodes[0].nodeValue / 10;
-    document.getElementById("MW306").innerHTML = xmlDoc.getElementsByTagName("MW306")[0].childNodes[0].nodeValue;
-    document.getElementById("MW406").innerHTML = xmlDoc.getElementsByTagName("MW406")[0].childNodes[0].nodeValue;
-    // 
-    document.getElementById("MW107").innerHTML = xmlDoc.getElementsByTagName("MW107")[0].childNodes[0].nodeValue;
-    document.getElementById("MW207").innerHTML = xmlDoc.getElementsByTagName("MW207")[0].childNodes[0].nodeValue / 10;
-    document.getElementById("MW307").innerHTML = xmlDoc.getElementsByTagName("MW307")[0].childNodes[0].nodeValue;
-    document.getElementById("MW407").innerHTML = xmlDoc.getElementsByTagName("MW407")[0].childNodes[0].nodeValue;
-    // 
-    document.getElementById("MW108").innerHTML = xmlDoc.getElementsByTagName("MW108")[0].childNodes[0].nodeValue;
-    document.getElementById("MW208").innerHTML = xmlDoc.getElementsByTagName("MW208")[0].childNodes[0].nodeValue / 10;
-    document.getElementById("MW308").innerHTML = xmlDoc.getElementsByTagName("MW308")[0].childNodes[0].nodeValue;
-    document.getElementById("MW408").innerHTML = xmlDoc.getElementsByTagName("MW408")[0].childNodes[0].nodeValue;
-    // 
-    document.getElementById("MW109").innerHTML = xmlDoc.getElementsByTagName("MW109")[0].childNodes[0].nodeValue;
-    document.getElementById("MW209").innerHTML = xmlDoc.getElementsByTagName("MW209")[0].childNodes[0].nodeValue / 10;
-    document.getElementById("MW309").innerHTML = xmlDoc.getElementsByTagName("MW309")[0].childNodes[0].nodeValue;
-    document.getElementById("MW409").innerHTML = xmlDoc.getElementsByTagName("MW409")[0].childNodes[0].nodeValue;
-    // 
-    document.getElementById("MW110").innerHTML = xmlDoc.getElementsByTagName("MW110")[0].childNodes[0].nodeValue;
-    document.getElementById("MW210").innerHTML = xmlDoc.getElementsByTagName("MW210")[0].childNodes[0].nodeValue / 10;
-    document.getElementById("MW310").innerHTML = xmlDoc.getElementsByTagName("MW310")[0].childNodes[0].nodeValue;
-    document.getElementById("MW410").innerHTML = xmlDoc.getElementsByTagName("MW410")[0].childNodes[0].nodeValue;
-    // 
-    document.getElementById("MW111").innerHTML = xmlDoc.getElementsByTagName("MW111")[0].childNodes[0].nodeValue;
-    document.getElementById("MW211").innerHTML = xmlDoc.getElementsByTagName("MW211")[0].childNodes[0].nodeValue / 10;
-    document.getElementById("MW311").innerHTML = xmlDoc.getElementsByTagName("MW311")[0].childNodes[0].nodeValue;
-    document.getElementById("MW411").innerHTML = xmlDoc.getElementsByTagName("MW411")[0].childNodes[0].nodeValue;
-    // 
-    document.getElementById("MW112").innerHTML = xmlDoc.getElementsByTagName("MW112")[0].childNodes[0].nodeValue;
-    document.getElementById("MW212").innerHTML = xmlDoc.getElementsByTagName("MW212")[0].childNodes[0].nodeValue / 10;
-    document.getElementById("MW312").innerHTML = xmlDoc.getElementsByTagName("MW312")[0].childNodes[0].nodeValue;
-    document.getElementById("MW412").innerHTML = xmlDoc.getElementsByTagName("MW412")[0].childNodes[0].nodeValue;
-    // 
-    document.getElementById("MW113").innerHTML = xmlDoc.getElementsByTagName("MW113")[0].childNodes[0].nodeValue;
-    document.getElementById("MW213").innerHTML = xmlDoc.getElementsByTagName("MW213")[0].childNodes[0].nodeValue / 10;
-    document.getElementById("MW313").innerHTML = xmlDoc.getElementsByTagName("MW313")[0].childNodes[0].nodeValue;
-    document.getElementById("MW413").innerHTML = xmlDoc.getElementsByTagName("MW413")[0].childNodes[0].nodeValue;
-    // 
-    document.getElementById("MW114").innerHTML = xmlDoc.getElementsByTagName("MW114")[0].childNodes[0].nodeValue;
-    document.getElementById("MW214").innerHTML = xmlDoc.getElementsByTagName("MW214")[0].childNodes[0].nodeValue / 10;
-    document.getElementById("MW314").innerHTML = xmlDoc.getElementsByTagName("MW314")[0].childNodes[0].nodeValue;
-    document.getElementById("MW414").innerHTML = xmlDoc.getElementsByTagName("MW414")[0].childNodes[0].nodeValue;
-    // 
-    document.getElementById("MW115").innerHTML = xmlDoc.getElementsByTagName("MW115")[0].childNodes[0].nodeValue;
-    document.getElementById("MW215").innerHTML = xmlDoc.getElementsByTagName("MW215")[0].childNodes[0].nodeValue / 10;
-    document.getElementById("MW315").innerHTML = xmlDoc.getElementsByTagName("MW315")[0].childNodes[0].nodeValue;
-    document.getElementById("MW415").innerHTML = xmlDoc.getElementsByTagName("MW415")[0].childNodes[0].nodeValue;
-    // 
-    document.getElementById("MW116").innerHTML = xmlDoc.getElementsByTagName("MW116")[0].childNodes[0].nodeValue;
-    document.getElementById("MW216").innerHTML = xmlDoc.getElementsByTagName("MW216")[0].childNodes[0].nodeValue / 10;
-    document.getElementById("MW316").innerHTML = xmlDoc.getElementsByTagName("MW316")[0].childNodes[0].nodeValue;
-    document.getElementById("MW416").innerHTML = xmlDoc.getElementsByTagName("MW416")[0].childNodes[0].nodeValue;
-    // 
-    document.getElementById("MW117").innerHTML = xmlDoc.getElementsByTagName("MW117")[0].childNodes[0].nodeValue;
-    document.getElementById("MW217").innerHTML = xmlDoc.getElementsByTagName("MW217")[0].childNodes[0].nodeValue / 10;
-    document.getElementById("MW317").innerHTML = xmlDoc.getElementsByTagName("MW317")[0].childNodes[0].nodeValue;
-    document.getElementById("MW417").innerHTML = xmlDoc.getElementsByTagName("MW417")[0].childNodes[0].nodeValue;
-    // 
-    document.getElementById("MW118").innerHTML = xmlDoc.getElementsByTagName("MW118")[0].childNodes[0].nodeValue;
-    document.getElementById("MW218").innerHTML = xmlDoc.getElementsByTagName("MW218")[0].childNodes[0].nodeValue / 10;
-    document.getElementById("MW318").innerHTML = xmlDoc.getElementsByTagName("MW318")[0].childNodes[0].nodeValue;
-    document.getElementById("MW418").innerHTML = xmlDoc.getElementsByTagName("MW418")[0].childNodes[0].nodeValue;
-    // 
-    document.getElementById("MW119").innerHTML = xmlDoc.getElementsByTagName("MW119")[0].childNodes[0].nodeValue;
-    document.getElementById("MW219").innerHTML = xmlDoc.getElementsByTagName("MW219")[0].childNodes[0].nodeValue / 10;
-    document.getElementById("MW319").innerHTML = xmlDoc.getElementsByTagName("MW319")[0].childNodes[0].nodeValue;
-    document.getElementById("MW419").innerHTML = xmlDoc.getElementsByTagName("MW419")[0].childNodes[0].nodeValue;
-    // 
-    document.getElementById("MW120").innerHTML = xmlDoc.getElementsByTagName("MW120")[0].childNodes[0].nodeValue;
-    document.getElementById("MW220").innerHTML = xmlDoc.getElementsByTagName("MW220")[0].childNodes[0].nodeValue / 10;
-    document.getElementById("MW320").innerHTML = xmlDoc.getElementsByTagName("MW320")[0].childNodes[0].nodeValue;
-    document.getElementById("MW420").innerHTML = xmlDoc.getElementsByTagName("MW420")[0].childNodes[0].nodeValue;
-  }
-  </script>
-  <h2>EC Control</h2>
-  <span id="date_time"></span>
-  <table>
-    <caption>&nbsp;</caption>
-      <thead>
-        <tr>
-          <th>Gruppe</th>
-          <th>Sollwert</th>
-          <th>Istwert</th>
-          <th>Temp</th>
-          <th>Error</th>
-          <th></th>
-          <th>Sollwert</th>
-          <!-- <th></th> -->
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1</td>
-          <td id="MW101"></td>
-          <td id="MW301"></td>
-          <td id="MW201"></td>
-          <td id="MW401"></td>
-          <td></td>
-          <td colspan="2">
-            <form action="/WRITEPI" method="POST">
+  <script src="js/scripts.js"></script>
+  <ul class="list-group list-group-horizontal">
+    <li class="list-group-item">EC Control</li>
+    <li class="list-group-item" id="date_time">date_time</li>
+  </ul>
+  <table class="table table-sm table-bordered table-striped">
+    <thead>
+      <tr>
+        <th class="text-center">#</th>
+        <th class="text-center">Sollwert</th>
+        <th class="text-center">Istwert</th>
+        <th class="text-center">Temp</th>
+        <th class="text-center">Error</th>
+        <th class="text-center">Sollwert</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="text-center align-middle">1</td>
+        <td class="text-center align-middle" id="MW101"></td>
+        <td class="text-center align-middle" id="MW301"></td>
+        <td class="text-center align-middle" id="MW201"></td>
+        <td class="text-center align-middle" id="MW401"></td>
+        <td class="text-center align-middle">
+          <form action="/WRITEPI" class="form-inline mb-0" method="POST">
+            <div class="form-row">
               <input type="hidden" name="ADR1" value="MW101">
-              <input type="text" size="5" maxlength="10" name="VALUE1" value="">
+              <input type="text" class="form-control form-control-sm ml-1" size="5" maxlength="5" name="VALUE1" value="####">
               <input type="hidden" name="FORMAT1" value="%d">
-              <input type="SUBMIT" value="Submit" name="VALUE">
-            </form>
-          </td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td id="MW102"></td>
-          <td id="MW302"></td>
-          <td id="MW202"></td>
-          <td id="MW402"></td>
-          <td></td>
-          <td colspan="2">
-            <form action="/WRITEPI" method="POST">
+            </div>
+            <button class="btn btn-dark ml-2" type="SUBMIT">Set</button>
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <td class="text-center align-middle">2</td>
+        <td class="text-center align-middle" id="MW102"></td>
+        <td class="text-center align-middle" id="MW302"></td>
+        <td class="text-center align-middle" id="MW202"></td>
+        <td class="text-center align-middle" id="MW402"></td>
+        <td class="text-center align-middle">
+          <form action="/WRITEPI" class="form-inline mb-0" method="POST">
+            <div class="form-row">
               <input type="hidden" name="ADR1" value="MW102">
-              <input type="text" size="5" maxlength="10" name="VALUE1" value="">
+              <input type="text" class="form-control form-control-sm ml-1" size="5" maxlength="5" name="VALUE1" value="####">
               <input type="hidden" name="FORMAT1" value="%d">
-              <input type="SUBMIT" value="Submit" name="VALUE">
-            </form>
-          </td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td id="MW103"></td>
-          <td id="MW303"></td>
-          <td id="MW203"></td>
-          <td id="MW403"></td>
-          <td></td>
-          <td colspan="2">
-            <form action="/WRITEPI" method="POST">
+            </div>
+            <button class="btn btn-dark ml-2" type="SUBMIT">Set</button>
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <td class="text-center align-middle">3</td>
+        <td class="text-center align-middle" id="MW103"></td>
+        <td class="text-center align-middle" id="MW303"></td>
+        <td class="text-center align-middle" id="MW203"></td>
+        <td class="text-center align-middle" id="MW403"></td>
+        <td class="text-center align-middle">
+          <form action="/WRITEPI" class="form-inline mb-0" method="POST">
+            <div class="form-row">
               <input type="hidden" name="ADR1" value="MW103">
-              <input type="text" size="5" maxlength="10" name="VALUE1" value="">
+              <input type="text" class="form-control form-control-sm ml-1" size="5" maxlength="5" name="VALUE1" value="####">
               <input type="hidden" name="FORMAT1" value="%d">
-              <input type="SUBMIT" value="Submit" name="VALUE">
-            </form>
-          </td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td id="MW104"></td>
-          <td id="MW304"></td>
-          <td id="MW204"></td>
-          <td id="MW404"></td>
-          <td></td>
-          <td colspan="2">
-            <form action="/WRITEPI" method="POST">
+            </div>
+            <button class="btn btn-dark ml-2" type="SUBMIT">Set</button>
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <td class="text-center align-middle">4</td>
+        <td class="text-center align-middle" id="MW104"></td>
+        <td class="text-center align-middle" id="MW304"></td>
+        <td class="text-center align-middle" id="MW204"></td>
+        <td class="text-center align-middle" id="MW404"></td>
+        <td class="text-center align-middle">
+          <form action="/WRITEPI" class="form-inline mb-0" method="POST">
+            <div class="form-row">
               <input type="hidden" name="ADR1" value="MW104">
-              <input type="text" size="5" maxlength="10" name="VALUE1" value="">
+              <input type="text" class="form-control form-control-sm ml-1" size="5" maxlength="5" name="VALUE1" value="####">
               <input type="hidden" name="FORMAT1" value="%d">
-              <input type="SUBMIT" value="Submit" name="VALUE">
-            </form>
-          </td>
-        </tr>
-        <tr>
-          <td>5</td>
-          <td id="MW105"></td>
-          <td id="MW305"></td>
-          <td id="MW205"></td>
-          <td id="MW405"></td>
-          <td></td>
-          <td colspan="2">
-            <form action="/WRITEPI" method="POST">
+            </div>
+            <button class="btn btn-dark ml-2" type="SUBMIT">Set</button>
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <td class="text-center align-middle">5</td>
+        <td class="text-center align-middle" id="MW105"></td>
+        <td class="text-center align-middle" id="MW305"></td>
+        <td class="text-center align-middle" id="MW205"></td>
+        <td class="text-center align-middle" id="MW405"></td>
+        <td class="text-center align-middle">
+          <form action="/WRITEPI" class="form-inline mb-0" method="POST">
+            <div class="form-row">
               <input type="hidden" name="ADR1" value="MW105">
-              <input type="text" size="5" maxlength="10" name="VALUE1" value="">
+              <input type="text" class="form-control form-control-sm ml-1" size="5" maxlength="5" name="VALUE1" value="####">
               <input type="hidden" name="FORMAT1" value="%d">
-              <input type="SUBMIT" value="Submit" name="VALUE">
-            </form>
-          </td>
-        </tr>
-        <tr>
-          <td>6</td>
-          <td id="MW106"></td>
-          <td id="MW306"></td>
-          <td id="MW206"></td>
-          <td id="MW406"></td>
-          <td></td>
-          <td colspan="2">
-            <form action="/WRITEPI" method="POST">
+            </div>
+            <button class="btn btn-dark ml-2" type="SUBMIT">Set</button>
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <td class="text-center align-middle">6</td>
+        <td class="text-center align-middle" id="MW106"></td>
+        <td class="text-center align-middle" id="MW306"></td>
+        <td class="text-center align-middle" id="MW206"></td>
+        <td class="text-center align-middle" id="MW406"></td>
+        <td class="text-center align-middle">
+          <form action="/WRITEPI" class="form-inline mb-0" method="POST">
+            <div class="form-row">
               <input type="hidden" name="ADR1" value="MW106">
-              <input type="text" size="5" maxlength="10" name="VALUE1" value="">
+              <input type="text" class="form-control form-control-sm ml-1" size="5" maxlength="5" name="VALUE1" value="####">
               <input type="hidden" name="FORMAT1" value="%d">
-              <input type="SUBMIT" value="Submit" name="VALUE">
-            </form>
-          </td>
-        </tr>
-        <tr>
-          <td>7</td>
-          <td id="MW107"></td>
-          <td id="MW307"></td>
-          <td id="MW207"></td>
-          <td id="MW407"></td>
-          <td></td>
-          <td colspan="2">
-            <form action="/WRITEPI" method="POST">
+            </div>
+            <button class="btn btn-dark ml-2" type="SUBMIT">Set</button>
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <td class="text-center align-middle">7</td>
+        <td class="text-center align-middle" id="MW107"></td>
+        <td class="text-center align-middle" id="MW307"></td>
+        <td class="text-center align-middle" id="MW207"></td>
+        <td class="text-center align-middle" id="MW407"></td>
+        <td class="text-center align-middle">
+          <form action="/WRITEPI" class="form-inline mb-0" method="POST">
+            <div class="form-row">
               <input type="hidden" name="ADR1" value="MW107">
-              <input type="text" size="5" maxlength="10" name="VALUE1" value="">
+              <input type="text" class="form-control form-control-sm ml-1" size="5" maxlength="5" name="VALUE1" value="####">
               <input type="hidden" name="FORMAT1" value="%d">
-              <input type="SUBMIT" value="Submit" name="VALUE">
-            </form>
-          </td>
-        </tr>
-        <tr>
-          <td>8</td>
-          <td id="MW108"></td>
-          <td id="MW308"></td>
-          <td id="MW208"></td>
-          <td id="MW408"></td>
-          <td></td>
-          <td colspan="2">
-            <form action="/WRITEPI" method="POST">
+            </div>
+            <button class="btn btn-dark ml-2" type="SUBMIT">Set</button>
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <td class="text-center align-middle">8</td>
+        <td class="text-center align-middle" id="MW108"></td>
+        <td class="text-center align-middle" id="MW308"></td>
+        <td class="text-center align-middle" id="MW208"></td>
+        <td class="text-center align-middle" id="MW408"></td>
+        <td class="text-center align-middle">
+          <form action="/WRITEPI" class="form-inline mb-0" method="POST">
+            <div class="form-row">
               <input type="hidden" name="ADR1" value="MW108">
-              <input type="text" size="5" maxlength="10" name="VALUE1" value="">
+              <input type="text" class="form-control form-control-sm ml-1" size="5" maxlength="5" name="VALUE1" value="####">
               <input type="hidden" name="FORMAT1" value="%d">
-              <input type="SUBMIT" value="Submit" name="VALUE">
-            </form>
-          </td>
-        </tr>
-        <tr>
-          <td>9</td>
-          <td id="MW109"></td>
-          <td id="MW309"></td>
-          <td id="MW209"></td>
-          <td id="MW409"></td>
-          <td></td>
-          <td colspan="2">
-            <form action="/WRITEPI" method="POST">
+            </div>
+            <button class="btn btn-dark ml-2" type="SUBMIT">Set</button>
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <td class="text-center align-middle">9</td>
+        <td class="text-center align-middle" id="MW109"></td>
+        <td class="text-center align-middle" id="MW309"></td>
+        <td class="text-center align-middle" id="MW209"></td>
+        <td class="text-center align-middle" id="MW409"></td>
+        <td class="text-center align-middle">
+          <form action="/WRITEPI" class="form-inline mb-0" method="POST">
+            <div class="form-row">
               <input type="hidden" name="ADR1" value="MW109">
-              <input type="text" size="5" maxlength="10" name="VALUE1" value="">
+              <input type="text" class="form-control form-control-sm ml-1" size="5" maxlength="5" name="VALUE1" value="####">
               <input type="hidden" name="FORMAT1" value="%d">
-              <input type="SUBMIT" value="Submit" name="VALUE">
-            </form>
-          </td>
-        </tr>
-        <tr>
-          <td>10</td>
-          <td id="MW110"></td>
-          <td id="MW310"></td>
-          <td id="MW210"></td>
-          <td id="MW410"></td>
-          <td></td>
-          <td colspan="2">
-            <form action="/WRITEPI" method="POST">
+            </div>
+            <button class="btn btn-dark ml-2" type="SUBMIT">Set</button>
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <td class="text-center align-middle">10</td>
+        <td class="text-center align-middle" id="MW110"></td>
+        <td class="text-center align-middle" id="MW310"></td>
+        <td class="text-center align-middle" id="MW210"></td>
+        <td class="text-center align-middle" id="MW410"></td>
+        <td class="text-center align-middle">
+          <form action="/WRITEPI" class="form-inline mb-0" method="POST">
+            <div class="form-row">
               <input type="hidden" name="ADR1" value="MW110">
-              <input type="text" size="5" maxlength="10" name="VALUE1" value="">
+              <input type="text" class="form-control form-control-sm ml-1" size="5" maxlength="5" name="VALUE1" value="####">
               <input type="hidden" name="FORMAT1" value="%d">
-              <input type="SUBMIT" value="Submit" name="VALUE">
-            </form>
-          </td>
-        </tr>
-        <tr>
-          <td>11</td>
-          <td id="MW111"></td>
-          <td id="MW311"></td>
-          <td id="MW211"></td>
-          <td id="MW411"></td>
-          <td></td>
-          <td colspan="2">
-            <form action="/WRITEPI" method="POST">
+            </div>
+            <button class="btn btn-dark ml-2" type="SUBMIT">Set</button>
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <td class="text-center align-middle">11</td>
+        <td class="text-center align-middle" id="MW111"></td>
+        <td class="text-center align-middle" id="MW311"></td>
+        <td class="text-center align-middle" id="MW211"></td>
+        <td class="text-center align-middle" id="MW411"></td>
+        <td class="text-center align-middle">
+          <form action="/WRITEPI" class="form-inline mb-0" method="POST">
+            <div class="form-row">
               <input type="hidden" name="ADR1" value="MW111">
-              <input type="text" size="5" maxlength="10" name="VALUE1" value="">
+              <input type="text" class="form-control form-control-sm ml-1" size="5" maxlength="5" name="VALUE1" value="####">
               <input type="hidden" name="FORMAT1" value="%d">
-              <input type="SUBMIT" value="Submit" name="VALUE">
-            </form>
-          </td>
-        </tr>
-        <tr>
-          <td>12</td>
-          <td id="MW112"></td>
-          <td id="MW312"></td>
-          <td id="MW212"></td>
-          <td id="MW412"></td>
-          <td></td>
-          <td colspan="2">
-            <form action="/WRITEPI" method="POST">
+            </div>
+            <button class="btn btn-dark ml-2" type="SUBMIT">Set</button>
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <td class="text-center align-middle">12</td>
+        <td class="text-center align-middle" id="MW112"></td>
+        <td class="text-center align-middle" id="MW312"></td>
+        <td class="text-center align-middle" id="MW212"></td>
+        <td class="text-center align-middle" id="MW412"></td>
+        <td class="text-center align-middle">
+          <form action="/WRITEPI" class="form-inline mb-0" method="POST">
+            <div class="form-row">
               <input type="hidden" name="ADR1" value="MW112">
-              <input type="text" size="5" maxlength="10" name="VALUE1" value="">
+              <input type="text" class="form-control form-control-sm ml-1" size="5" maxlength="5" name="VALUE1" value="####">
               <input type="hidden" name="FORMAT1" value="%d">
-              <input type="SUBMIT" value="Submit" name="VALUE">
-            </form>
-          </td>
-        </tr>
-        <tr>
-          <td>13</td>
-          <td id="MW113"></td>
-          <td id="MW313"></td>
-          <td id="MW213"></td>
-          <td id="MW413"></td>
-          <td></td>
-          <td colspan="2">
-            <form action="/WRITEPI" method="POST">
+            </div>
+            <button class="btn btn-dark ml-2" type="SUBMIT">Set</button>
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <td class="text-center align-middle">13</td>
+        <td class="text-center align-middle" id="MW113"></td>
+        <td class="text-center align-middle" id="MW313"></td>
+        <td class="text-center align-middle" id="MW213"></td>
+        <td class="text-center align-middle" id="MW413"></td>
+        <td class="text-center align-middle">
+          <form action="/WRITEPI" class="form-inline mb-0" method="POST">
+            <div class="form-row">
               <input type="hidden" name="ADR1" value="MW113">
-              <input type="text" size="5" maxlength="10" name="VALUE1" value="">
+              <input type="text" class="form-control form-control-sm ml-1" size="5" maxlength="5" name="VALUE1" value="####">
               <input type="hidden" name="FORMAT1" value="%d">
-              <input type="SUBMIT" value="Submit" name="VALUE">
-            </form>
-          </td>
-        </tr>
-        <tr>
-          <td>14</td>
-          <td id="MW114"></td>
-          <td id="MW314"></td>
-          <td id="MW214"></td>
-          <td id="MW414"></td>
-          <td></td>
-          <td colspan="2">
-            <form action="/WRITEPI" method="POST">
+            </div>
+            <button class="btn btn-dark ml-2" type="SUBMIT">Set</button>
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <td class="text-center align-middle">14</td>
+        <td class="text-center align-middle" id="MW114"></td>
+        <td class="text-center align-middle" id="MW314"></td>
+        <td class="text-center align-middle" id="MW214"></td>
+        <td class="text-center align-middle" id="MW414"></td>
+        <td class="text-center align-middle">
+          <form action="/WRITEPI" class="form-inline mb-0" method="POST">
+            <div class="form-row">
               <input type="hidden" name="ADR1" value="MW114">
-              <input type="text" size="5" maxlength="10" name="VALUE1" value="">
+              <input type="text" class="form-control form-control-sm ml-1" size="5" maxlength="5" name="VALUE1" value="####">
               <input type="hidden" name="FORMAT1" value="%d">
-              <input type="SUBMIT" value="Submit" name="VALUE">
-            </form>
-          </td>
-        </tr>
-        <tr>
-          <td>15</td>
-          <td id="MW115"></td>
-          <td id="MW315"></td>
-          <td id="MW215"></td>
-          <td id="MW415"></td>
-          <td></td>
-          <td colspan="2">
-            <form action="/WRITEPI" method="POST">
+            </div>
+            <button class="btn btn-dark ml-2" type="SUBMIT">Set</button>
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <td class="text-center align-middle">15</td>
+        <td class="text-center align-middle" id="MW115"></td>
+        <td class="text-center align-middle" id="MW315"></td>
+        <td class="text-center align-middle" id="MW215"></td>
+        <td class="text-center align-middle" id="MW415"></td>
+        <td class="text-center align-middle">
+          <form action="/WRITEPI" class="form-inline mb-0" method="POST">
+            <div class="form-row">
               <input type="hidden" name="ADR1" value="MW115">
-              <input type="text" size="5" maxlength="10" name="VALUE1" value="">
+              <input type="text" class="form-control form-control-sm ml-1" size="5" maxlength="5" name="VALUE1" value="####">
               <input type="hidden" name="FORMAT1" value="%d">
-              <input type="SUBMIT" value="Submit" name="VALUE">
-            </form>
-          </td>
-        </tr>
-        <tr>
-          <td>16</td>
-          <td id="MW116"></td>
-          <td id="MW316"></td>
-          <td id="MW216"></td>
-          <td id="MW416"></td>
-          <td></td>
-          <td colspan="2">
-            <form action="/WRITEPI" method="POST">
+            </div>
+            <button class="btn btn-dark ml-2" type="SUBMIT">Set</button>
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <td class="text-center align-middle">16</td>
+        <td class="text-center align-middle" id="MW116"></td>
+        <td class="text-center align-middle" id="MW316"></td>
+        <td class="text-center align-middle" id="MW216"></td>
+        <td class="text-center align-middle" id="MW416"></td>
+        <td class="text-center align-middle">
+          <form action="/WRITEPI" class="form-inline mb-0" method="POST">
+            <div class="form-row">
               <input type="hidden" name="ADR1" value="MW116">
-              <input type="text" size="5" maxlength="10" name="VALUE1" value="">
+              <input type="text" class="form-control form-control-sm ml-1" size="5" maxlength="5" name="VALUE1" value="####">
               <input type="hidden" name="FORMAT1" value="%d">
-              <input type="SUBMIT" value="Submit" name="VALUE">
-            </form>
-          </td>
-        </tr>
-        <tr>
-          <td>17</td>
-          <td id="MW117"></td>
-          <td id="MW317"></td>
-          <td id="MW217"></td>
-          <td id="MW417"></td>
-          <td></td>
-          <td colspan="2">
-            <form action="/WRITEPI" method="POST">
+            </div>
+            <button class="btn btn-dark ml-2" type="SUBMIT">Set</button>
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <td class="text-center align-middle">17</td>
+        <td class="text-center align-middle" id="MW117"></td>
+        <td class="text-center align-middle" id="MW317"></td>
+        <td class="text-center align-middle" id="MW217"></td>
+        <td class="text-center align-middle" id="MW417"></td>
+        <td class="text-center align-middle">
+          <form action="/WRITEPI" class="form-inline mb-0" method="POST">
+            <div class="form-row">
               <input type="hidden" name="ADR1" value="MW117">
-              <input type="text" size="5" maxlength="10" name="VALUE1" value="">
+              <input type="text" class="form-control form-control-sm ml-1" size="5" maxlength="5" name="VALUE1" value="####">
               <input type="hidden" name="FORMAT1" value="%d">
-              <input type="SUBMIT" value="Submit" name="VALUE">
-            </form>
-          </td>
-        </tr>
-        <tr>
-          <td>18</td>
-          <td id="MW118"></td>
-          <td id="MW318"></td>
-          <td id="MW218"></td>
-          <td id="MW418"></td>
-          <td></td>
-          <td colspan="2">
-            <form action="/WRITEPI" method="POST">
+            </div>
+            <button class="btn btn-dark ml-2" type="SUBMIT">Set</button>
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <td class="text-center align-middle">18</td>
+        <td class="text-center align-middle" id="MW118"></td>
+        <td class="text-center align-middle" id="MW318"></td>
+        <td class="text-center align-middle" id="MW218"></td>
+        <td class="text-center align-middle" id="MW418"></td>
+        <td class="text-center align-middle">
+          <form action="/WRITEPI" class="form-inline mb-0" method="POST">
+            <div class="form-row">
               <input type="hidden" name="ADR1" value="MW118">
-              <input type="text" size="5" maxlength="10" name="VALUE1" value="">
+              <input type="text" class="form-control form-control-sm ml-1" size="5" maxlength="5" name="VALUE1" value="####">
               <input type="hidden" name="FORMAT1" value="%d">
-              <input type="SUBMIT" value="Submit" name="VALUE">
-            </form>
-          </td>
-        </tr>
-        <tr>
-          <td>19</td>
-          <td id="MW119"></td>
-          <td id="MW319"></td>
-          <td id="MW219"></td>
-          <td id="MW419"></td>
-          <td></td>
-          <td colspan="2">
-            <form action="/WRITEPI" method="POST">
+            </div>
+            <button class="btn btn-dark ml-2" type="SUBMIT">Set</button>
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <td class="text-center align-middle">19</td>
+        <td class="text-center align-middle" id="MW119"></td>
+        <td class="text-center align-middle" id="MW319"></td>
+        <td class="text-center align-middle" id="MW219"></td>
+        <td class="text-center align-middle" id="MW419"></td>
+        <td class="text-center align-middle">
+          <form action="/WRITEPI" class="form-inline mb-0" method="POST">
+            <div class="form-row">
               <input type="hidden" name="ADR1" value="MW119">
-              <input type="text" size="5" maxlength="10" name="VALUE1" value="">
+              <input type="text" class="form-control form-control-sm ml-1" size="5" maxlength="5" name="VALUE1" value="####">
               <input type="hidden" name="FORMAT1" value="%d">
-              <input type="SUBMIT" value="Submit" name="VALUE">
-            </form>
-          </td>
-        </tr>
-        <tr>
-          <td>20</td>
-          <td id="MW120"></td>
-          <td id="MW320"></td>
-          <td id="MW220"></td>
-          <td id="MW420"></td>
-          <td></td>
-          <td colspan="2">
-            <form action="/WRITEPI" method="POST">
+            </div>
+            <button class="btn btn-dark ml-2" type="SUBMIT">Set</button>
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <td class="text-center align-middle">20</td>
+        <td class="text-center align-middle" id="MW120"></td>
+        <td class="text-center align-middle" id="MW320"></td>
+        <td class="text-center align-middle" id="MW220"></td>
+        <td class="text-center align-middle" id="MW420"></td>
+        <td class="text-center align-middle">
+          <form action="/WRITEPI" class="form-inline mb-0" method="POST">
+            <div class="form-row">
               <input type="hidden" name="ADR1" value="MW120">
-              <input type="text" size="5" maxlength="10" name="VALUE1" value="">
+              <input type="text" class="form-control form-control-sm ml-1" size="5" maxlength="5" name="VALUE1" value="####">
               <input type="hidden" name="FORMAT1" value="%d">
-              <input type="SUBMIT" value="Submit" name="VALUE">
-            </form>
-          </td>
-        </tr>
-      </tbody>
+            </div>
+            <button class="btn btn-dark ml-2" type="SUBMIT">Set</button>
+          </form>
+        </td>
+      </tr>
+    </tbody>
   </table>
 </body>
+
 </html>
